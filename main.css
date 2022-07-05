@@ -9,6 +9,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    background-color: #fff;
+    top: 0px;
+    z-index: 1;
 }
 
 .header__logo {
@@ -51,8 +55,15 @@ button:hover {
 .about__sun-image {
     width: 100px;
     height: 100px;
+    animation: rotation 10s infinite linear;
+    position: absolute;
 }
 
+@keyframes rotation {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+    
+}
 .about {
     display: flex;
     justify-content: space-around;
